@@ -67,6 +67,9 @@ module.exports = {
             if(!dbUserData) {
                 return res.status(404).json({ message: 'No user found with this id!' });
             }
+            
+
+
             res.json(dbUserData);
         } catch (err) {
             console.log(err);
